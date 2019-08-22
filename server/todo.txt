@@ -1,0 +1,39 @@
+﻿- key: main
+
+Bunlar bizim anamenülerimiz bunlar çekilerek ekranda gösterilecek. +
+
+- key: kirmizi-et-ana-yemekler
+
+bu tip keyler ana menümüzün içindeki menülerden seçim yapıldıktan sonra gösterilecek ürünler. +
+
+
+Burası indirimli menülerle ürün satan bir restoran.
+
+Uygulama ilk açıldığında ana menüler çekilerek resimleri ile ekrana gösterilecek +
+mesela
+ - name: İndirimli Menüler
+   - name: Kırmızı Et Yemekleri
+   
+   gibi.
+
+Kullanıcı buradan menüsünü seçtikten sonra:
+eğer içinde sub menü varsa
+ subMenus: [kirmizi-et-ana-yemekler,indirimli-menu-yan-lezzetler-1,indirimli-menu-yan-lezzetler-2,
+indirimli-menu-tatli,indirimli-menu-icecek]
+
+buradaki gibi o alt menüler istelenerek o alt menüden seçimini yapabilmesi sağlanacak.
+
+mesela ben İndirimli Menüleri seçtim.
+İçine subMenus doldrulacak.
+Kullanıcı kirimizi-et-ana-yemekler sub menüsünden 1 tanesini seçebilir.
+ben Hünkarbeğendi seçtim. bunun ekstra fiyatı varmış. bu gösterilecek
+sonra indirimli-menu-yan-lezzetler-1 sub menüsünden 1 tane ürün seçebilir
+ben Nohutlu Pirinç Pilavı seçtim.
+
+böyle subMenus içindeki tüm seçenekleri seçmesi sağlanacak
+
+içinde subMenus olmayan ürünler olursa o sadece seçilecek herhangi bir işlem yapılmayacak.
+
+Bütün bu akışın yapılmasının sağlanması, resimleri gösterilmesi sağlanacak
+
+
